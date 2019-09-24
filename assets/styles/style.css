@@ -1,0 +1,1237 @@
+/*Global*/
+
+* {
+    font-family: 'din-2014', sans-serif;
+    -webkit-font-smoothing: antialised;
+    text-rendering: optimizeLegibility;
+}
+
+body {
+    background-color: #0D0D0D;    
+}
+
+hr {
+    border-top: 1px solid;
+}
+
+h1, h2, h3, h4, h5 {
+    color: white;
+    margin: 15px, 0;
+}
+
+p {
+    color: white;
+}
+
+/*NAVIGATION*/
+
+ul li {
+    text-transform: uppercase;
+}
+
+ul {
+    width: 90%;
+}
+
+.navbar-inverse {
+    background-color: #0D0D0D;
+    color: #fff;
+    letter-spacing: 4px;
+    font-size: 14px;
+    border: none;
+}
+
+.navbar-nav {
+    position: relative;
+    left: 26%;
+    margin-left: 0 auto;
+    float: none;
+}
+
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover
+{
+    background: none;
+}
+
+.navbar-nav li .active a {
+    background-color: none;
+}
+
+.navbar-brand img {
+    position: absolute;
+    top:7px; left: 2%;
+}
+
+.navbar-header button {
+    float:left;
+    margin-left: 20px;
+}
+
+li a {
+    background: none;
+}
+
+/*DEVELOPER LOGIN BUTTON*/
+
+.login {
+    position: absolute;
+    top: 23%;
+    right: 2%;
+    display:none;
+}
+
+.login a{
+    font-size: 14px;
+    letter-spacing: 1.75px;
+    color: #fff;
+    margin-right: 5px;
+}
+
+.login a:hover {
+    text-decoration: none;
+}
+
+/*LINKS*/
+a, a:link, a:visited {
+        color: #fff;
+        text-decoration: none;
+}
+
+a:hover, a:active {
+    color: #50E3C2;
+}
+
+/*HOME*/
+
+div.container.main-container {
+    max-width: 800px;
+    text-align: center;
+}
+
+.main-container h1 {
+    margin-top: 400px;
+    font-size: 30px;
+    font-weight: 700;
+    text-shadow: 1px 1px 5px black;
+    background: rgba(0,0,0,0.3);
+    border-radius: 50px;
+    padding: 10px;
+ }
+
+.main-container figure {
+    width: auto;
+}
+
+.main-container {
+    width: 500px;
+}
+
+#bg {
+    background-color: #0D0D0D;
+    z-index: 1;
+    margin-top: 550px;
+    padding-top: 20px;
+}
+
+.constellation-big,
+.constellation-small,
+.background_constellations {
+    z-index: 5;
+}
+
+.video-background {
+    background: #000;
+  position: fixed;
+  top: 0; right: 0; bottom: 0; left: 0;
+  z-index: -99;
+}
+
+.video-container, .video-container_video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;   
+
+    z-index: -5;
+    width: 100%;
+    height: 100%;
+    /*
+    background: url('https://rz-site-assets.storage.googleapis.com/images/wth_splash.jpg');
+    background-position: 50% 75%;
+    background-size: cover;
+    background-repeat: no-repeat;*/
+}
+
+.hero_image {
+    background: url('https://rz-site-assets.storage.googleapis.com/images/wth_splash.jpg');
+    background-position: 50% 75%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+.video-container_video {
+    top: -30%;
+    width: 100%;
+    height: 180%;
+}
+
+.submit-button {
+    font-family: 'din-2014', sans-serif;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    width: 200px;
+    height: 75px;
+    background: rgba(0,0,0,0.3);
+    border: solid 5px white;
+    border-radius: 50px;
+    text-shadow: 1px 1px 5px black;
+}
+
+.submit-button:hover {
+    -webkit-transition: width 0.2s, height 0.2s, font-size 0.2s;
+    transition: width 0.2s, height 0.2s, font-size 2s;
+    width: 210px;
+    height: 85px;
+    font-size: 21px;
+}
+
+.main .intro {
+    height: 800px;
+}
+
+.main-container {
+    padding-top: 5em;
+}
+
+.sub-intro .logo {
+    width: 150px;
+    height: 150px;
+}
+
+.sub-intro {
+    margin-top: 30px;
+}
+
+.sub-intro h1 {
+    margin-top: 40px;
+    font-weight: 400;
+    font-size: 45px;
+}
+
+.sub-intro .container {
+   max-width: 520px;
+}
+
+.some-icon {
+    position: relative;
+    left: -6.25px;
+    top: 50%;
+    height: 50px;
+    width: auto;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.some-icon:hover {
+    transition: heigth 0.2s, position 0.2s;
+    left: -12.5px;
+    margin-bottom: 0;
+    height: 60px;
+    width: auto;
+}
+
+.sub-intro p {
+    font-size: 18px;
+    font-weight: 200;
+}
+
+.sub-intro small {
+    display:block;
+    margin: 15px 0 5px 0;
+}
+
+.divider {
+    margin: 100px 0;
+    width: 50px;
+    height: auto;
+}
+
+.constellation-big {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    opacity: 0.1;
+    width: 350px;
+}
+
+.constellation-small {
+    animation: OpacityChange 3s infinite alternate ease-in;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    opacity: 1;
+    width: 100px;
+    
+    -webkit-filter: drop-shadow(-5px -5px 5px #fff);
+    filter: drop-shadow(0px 0px 5px #fff); 
+}
+
+@keyframes OpacityChange {
+    from {opacity: 0.1;}
+    to {opacity: 0.6;}
+}
+
+/*WE OFFER*/
+
+.we-offer {
+    
+}
+
+.we-offer h1 {
+    margin-bottom: 80px;
+}
+
+.we-offer h2,
+.we-offer h3 {
+    margin: 5px 0 0 0;
+}
+
+.we-offer h3 {
+    font-size: 13px;
+    color: grey;
+    margin-bottom: 5px;
+}
+
+.we-offer p {
+    font-size: 15px;
+    font-weight: 200;
+}
+
+.we-offer hr {
+    max-width: 400px;
+}
+
+.offer-icon {
+    height: 100px;
+    margin-bottom: 70px;
+}
+
+.joystick {
+    height: 120px;
+}
+
+.invader {
+    height: 90px;
+}
+
+.gem {
+    padding-left: 13px;
+    height: 75px;
+}
+
+/*NEWSLETTER*/
+
+form h2 {
+    font-size: 30px;
+    font-weight: 400;
+}
+
+form label {
+    margin-bottom: 0;
+    padding-bottom: 0 !important;
+}
+
+.we-offer form p {
+    margin-bottom: 15px;
+    color: grey;
+    font-size: 13px ;
+    font-weight: 400;
+}
+
+#mc_embed_signup{
+    clear:left;
+    width:100%;
+}
+
+.we-offer input[type="email"] {
+    height: 40px;
+    width: 270px !important;
+}
+
+.we-offer form {
+    padding-bottom: 5px;
+}
+
+.we-offer .button {
+    background-color: #50E3C2 !important;
+    border: none;
+    
+    height: 40px;
+    width: 100px;
+}
+
+.button:hover,
+.button:active,
+.button:focus {
+    background-color: #40A2B1 !important;
+}
+
+small {
+    color: #666;
+    font-family: 
+}
+
+/*games-body games*/
+
+#games-body {
+    background-color: white;
+    color: black;
+}
+
+#games-body p {
+    color: black;
+}
+
+/*CAROUSEL*/
+
+.item img {
+    display: block;
+    margin: 0 auto;
+    max-height: 550px;
+}
+
+.wth-carousel-bg {
+    background-image: url("https://rz-site-assets.storage.googleapis.com/images/wth_games_cover.png");
+    background-position: center center;
+    background-size: cover;
+    height:500px;
+}
+
+.wth-carousel-description img {
+    position:relative;
+    max-height: 42px;
+    display: inline;
+}
+
+.wth-carousel-video {
+    display: inline;
+    margin-top: 70px;
+}
+
+.hos-carousel-bg {
+    background-image: url("https://rz-site-assets.storage.googleapis.com/images/Taustakuva_HillsOfSteel.png");
+    background-position: center center;
+    background-size: cover;
+    height:500px;
+}
+
+.wth-carousel-description {
+    margin-top: 260px;
+    margin-left: 20px;
+    width: 300px;
+}
+
+#games-body .wth-carousel-description p {
+    margin-top: 20px;
+    font-weight: 400;
+    font-size: 16px;
+    color: white;
+}
+
+.carousel {
+    margin-top: 50px;
+}
+
+hr.carousel {
+  width: 620px;  
+}
+
+.google-play {
+    float:left;
+}
+
+
+.shape img {
+    width: auto;
+}
+
+.fresh {
+    margin-top: 0;
+}
+
+.container{
+    max-width: 620px;
+}
+
+
+#games {
+    margin-bottom: 1em;
+}
+
+.featured-games-header-figure, .timeline-header-figure {
+    padding: 5em;
+    padding-bottom: 0;
+    width: 100%;
+}
+
+.featured-games-header-figure {
+    padding-top: 3em;
+}
+
+.text-note {
+    margin: 50px 0 50px 0;
+    font-weight: 300;
+    font-size: 18px;
+    color: #E6E6E6;
+    letter-spacing: 0;
+    line-height: 30px;
+}
+
+.play-now {
+    font-weight: 300;
+    font-size: 18px;
+    color: #FFFFFF;
+    letter-spacing: 0;
+    line-height: 30px;
+}
+
+/* APPLICATION */
+
+.for-developers .intro .container {
+    padding-top: 100px;
+}
+
+.for-developers .intro {
+    background: url('../images/Taustakuva_2_transparent.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.for-developers .sub-intro .container h4 {
+    font-weight: 600;
+    font-size: 24px;
+    color: #FFFFFF;
+    letter-spacing: 4px;
+    line-height: 50px;
+    text-transform: uppercase;
+}
+
+.for-developers .sub-intro .container p {
+    font-weight: 300;
+    font-size: 18px;
+    color: #E6E6E6;
+    letter-spacing: 0;
+    line-height: 30px;
+    padding: 20px 50px 20px 50px;
+}
+
+.for-devs-img {
+    width: 100%;
+}
+
+.four-simple-requirements .intro {
+    background: url('../images/Taustakuva_3_transparent.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.four-steps-img {
+    width: 75%;
+}
+
+.four-simple-requirements .sub-intro .container h4 {
+    font-weight: 600;
+    font-size: 24px;
+    color: #FFFFFF;
+    letter-spacing: 4px;
+    line-height: 50px;
+    text-transform: uppercase;
+}
+
+#ga-logo {
+    padding: 8px;
+    background-color: #FBFBFA;
+    border-radius: 50px;
+    width: 300px;
+    margin-bottom: -5px;    
+}
+
+#ga-logo:hover {
+       background-color: #CCC;
+}
+
+#ga-logo img {
+    width: 250px;
+    height: auto;
+}
+
+.fill-form {
+    visibility: hidden;
+    width: 0px;
+    height: 0px;
+    font-size: 0px;
+    border-radius: 10px;
+    box-shadow: 0 5px #3091A1;
+    transition: width 0.2s, height 0.2s, font-size 0.2s;
+}
+
+.form-check-label {
+    color: #aaa;
+    margin-left: 5px;
+}
+
+.btn-success {
+    background-color: #50E3C2;
+    border: none;
+}
+
+.btn-success:hover,
+.btn-success:active,
+.btn-success:focus {
+    background-color: #40A2B1 !important;
+}
+
+
+
+.form-check-label {
+    position: relative;
+    top: -7px;
+    font-size: 17px;
+}
+
+input[type=checkbox] {
+    background: white !important;
+    width: 25px;
+    height: 25px;
+}
+
+/* HOME JOBS*/
+
+#jobs .container{
+    max-width: 550px;
+}
+
+#jobs h1 {
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+
+#jobs p {
+    margin-top: 25px;
+}
+
+/*HOME FOOTER*/
+
+#contact {
+    z-index: 2;
+    position: relative;
+    top: 0;
+    width: 100%;
+    height: 500px;
+    background: url("https://rz-site-assets.storage.googleapis.com/images/intro_transparant_bg.png");
+    background-repeat: no-repeat;
+    background-position: 50% 10%;
+    background-size: cover;
+    margin-top: 60px;
+}
+
+
+#contact .container {
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+#contact .row div p {
+    font-weight: 300;
+    font-size: 18px;
+    color: #FFFFFF;
+    letter-spacing: 0;
+    line-height: 30px;
+    margin: 0;
+}
+
+.publishing-contact-email {
+    border-bottom: 4px solid #50E3C2;
+}
+
+#contact .row figure {
+    padding: 0 70px 70px 70px;
+}
+
+#contact img{
+    width: 100%;
+    margin-top: -40px;
+    padding-bottom: 55px;
+}
+
+.timeline-header-figure img {
+        width: 100%;
+    }
+
+#privacy p, #privacy td, #privacy ul {
+    color: #ccc;
+    text-align: left;
+}
+
+#privacy a {
+    color: #ccc;
+    text-decoration: underline;
+}
+
+#privacy h2 {
+    color: white;
+}
+
+#privacy ul li {
+    text-transform: none;
+}
+
+#privacy p strong {
+    font-size: 16px;
+}
+
+#privacy {
+    padding: 10px 0 0 0;
+}
+
+/* APPLY APPLICATION FORM PAGE STYLES */
+
+.apply-main {
+    margin-top: 80px;
+    text-align:center;
+}
+
+.apply-main h1 {
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.apply-main img {
+    width: 420px;
+    margin-bottom: 30px;
+}
+
+#apply-form {
+    max-width: 900px;
+    background: white;
+    border-radius: 25px;
+    box-sizing: border-box;
+    padding: 30px;
+}
+
+#apply-form label {
+    text-transform: capitalize;
+}
+
+#apply-form figure {
+    text-align: center;
+    width: 50px;
+    height: 50px;
+    box-shadow: 0px 0px 5px #777;
+    border-radius: 100%;
+    -moz-border-radius: 100%;
+    -webkit-border-radius: 100%;
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 25px;
+    box-sizing: border-box;
+    padding: 6px;
+    margin: 10px 10px 10px 10px;
+}
+
+div.button-holder {
+    height: 50px;
+}
+
+.button-rz,
+.button-rz:link,
+.button-rz:visited
+{
+    width: 100px;
+    border: none;
+    cursor:pointer;
+    background-color: #6CC1B2;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    display: inline-block;
+    padding: 10px 10px;
+    text-transform: uppercase;
+    color: #eee;
+}
+
+.button-rz:hover
+{
+    margin-top: -2px;
+    margin-left: 2px;
+    transition: all 0.2s;
+    width: 105px;
+    color: #eee;
+    padding: 12px 12px;
+    border: 1px solid rgb(172, 240, 225);
+}
+.button-rz:active
+{
+    margin-top: -5px;
+    margin-left: -5px;
+    background-color: #fefefe;
+    transition: all 0.2s;
+    color: #50E3C2;
+    padding: 15px 15px;
+    border: 2px solid #50E3C2;
+}
+
+#apply-form div.row {
+    margin-bottom: 40px;
+}
+
+#apply-form input[type="text"],
+#apply-form input[type="email"],
+#apply-form input[type="password"]
+ {
+    border: none;
+    border-bottom: #aaa 1px solid;
+    box-shadow: none !important;
+    border-radius: 0 !important;   
+}
+
+#apply-form textarea {
+    min-width: 200px;
+    min-height: 100px;
+    max-width: 700px;
+    max-height: 250px;
+}
+
+.genre {
+    color: #555;
+    font-size: 17px;
+    text-transform: capitalize;
+}
+
+/*RADIO BUTTONS FOR FORM*/
+/* The radio */
+.radio {
+ 
+    display: block;
+   position: relative;
+   padding-left: 30px;
+   margin-bottom: 12px;
+   cursor: pointer;
+   font-size: 20px;
+   -webkit-user-select: none;
+   -moz-user-select: none;
+   -ms-user-select: none;
+   user-select: none
+}
+
+/* Hide the browser's default radio button */
+.radio input {
+   position: absolute;
+   opacity: 0;
+   cursor: pointer;
+}
+
+/* Create a custom radio button */
+.checkround {
+   position: absolute;
+   top: 6px;
+   left: 0;
+   height: 20px;
+   width: 20px;
+   background-color: #fff ;
+   border-color: #aaa;
+   border-style:solid;
+   border-width:2px;
+   border-radius: 50%;
+}
+
+
+/* When the radio button is checked, add a blue background */
+.radio input:checked ~ .checkround {
+   background-color: #fff;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkround:after {
+   content: "";
+   position: absolute;
+   display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.radio input:checked ~ .checkround:after {
+   display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.radio .checkround:after {
+    left: 2px;
+   top: 2px;
+   width: 12px;
+   height: 12px;
+   border-radius: 50%;
+   background:#50E3C2;
+}
+
+/* SQUARE Create the indicator (the dot/circle - hidden when not checked) */
+.checksquare:after {
+    content: "";
+    position: absolute;
+    display: none;
+ }
+ 
+ /* Show the indicator (dot/circle) when checked */
+ .radio input:checked ~ .checksquare:after {
+    display: block;
+ }
+ 
+ /* Style the indicator (dot/circle) */
+ .radio .checksquare:after {
+     left: 2px;
+    top: 2px;
+    width: 12px;
+    height: 12px;
+    background:#50E3C2;
+ }
+
+.checksquare {
+    position: absolute;
+    top: 6px;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: #fff ;
+    border-color: #aaa;
+    border-style:solid;
+    border-width:2px;
+    border-radius: 0 !important;
+ }
+
+/*MEDIA QUERIES*/
+@media only screen and ( max-width: 765px )
+{
+
+    #apply-form {
+        margin: auto 15px;
+    }
+
+    #apply-form figure {
+        margin-bottom: 5px;
+        margin-top: 50px;
+        margin-left: 45%;
+    }
+
+    #apply-form label {
+        margin-top: 5px;
+    }
+
+    /*change the position of login to center when navbar collapses*/
+    .login {
+        top: 25px;
+    }
+    
+    #infoCarousel span {
+        text-align: center;
+        margin-top: 0;
+        margin-bottom: 20px;
+    }
+    
+    #contact p {
+        text-align: center;
+    }
+    
+    #contact img {
+        width: 30% !important;
+    }
+    
+    #ga-logo {
+    width: 200px !important;
+        position: relative;
+        left: -10px;
+    }
+
+    #ga-logo img {
+        width: 150px !important;
+        height: auto;
+    }
+
+    #bg {
+        margin-top: 200px !important;
+    }
+    
+    .video-container_video {
+        top: -30% !important;
+        left: -35%;
+        width: 250%;
+        height: 100%;
+    }
+
+    .main-container h1 {
+        margin-top: 150px !important;
+    }
+
+    .hero_image {
+        display: block;
+        top: -20% !important;
+    }
+    
+}
+
+@media only screen and ( max-width: 1200px )
+{
+
+    .video-container {
+        display:none;
+    }
+
+    .navbar-nav {
+        position: relative;
+        left: 0% !important;
+        margin: 0 auto;
+        max-width: 100px;
+        float: none;
+    }
+
+    .navbar-nav li {
+        max-width: 100px;
+    }
+
+    #bg {
+        margin-top: 500px;
+    }
+
+    .background_constellations {
+        display: none;
+    }
+
+    .main-container figure {
+        position: absolute;
+        top: 0;
+        left: 52%;
+        width: 400px;
+        transform: translateX(-200px);
+    }
+
+    .main-container h1 {
+        margin-top: 250px;
+    }
+
+    .video-container_video {
+        top: -20%;
+        left: -35%;
+        width: 170%;
+        height: 100%;
+    }
+
+    .hero_image {
+        display: block;
+        top: -10%;
+    }
+}
+
+@media only screen and ( max-width: 900px )
+{
+    .hero_image {
+        display: block;
+        position: absolute !important;
+        top: 0% !important;
+        left: -0%;
+        min-width: 300px;
+        height: 400px;
+        background-size: cover;
+    }
+
+    figure h1 {
+        font-size: 20px !important;
+    }
+
+    .video-container_video {
+        top: -10%;
+        left: -35%;
+        width: 170%;
+        height: 120%;
+    }
+
+    div.container.main-container, div.navbar-header {
+        width: 200px;
+    }
+
+    .main-container figure {
+        position: absolute;
+        top: 0;
+        left: 52%;
+        width: 300px;
+        transform: translateX(-150px);
+    }
+    
+    #mc_embed_signup input.email {
+        width: 220px !important;
+        margin-bottom: 10px !important;
+    }
+
+    #mc_embed_signup input.button {
+        width: 220px !important;
+    }
+    
+     .we-offer .container {
+        width: 70%;
+        text-align: center;
+    }
+    
+    .sub-intro h1 {
+        font-size: 32px;
+    }
+    
+    .sub-intro p {
+    font-size: 15px;
+    font-weight: 200;
+    }
+
+   
+    
+    /*We Offer Section*/
+    
+    .we-offer .container {
+        width: 70%;
+        text-align: center;
+    }
+    
+    .offer-icon {
+        margin-bottom: 15px; 
+    }
+
+    
+    .some-icon {
+        
+    position: relative;
+    left: -6.25px;
+    top: 50%;
+    height: 50px;
+    width: auto;
+    font-size: 20px;
+    margin-bottom: 10px;
+        
+    }
+
+    .some-icon:hover {
+        
+    transition: heigth 0.2s, position 0.2s;
+    left: -12.5px;
+    margin-bottom: 0;
+    height: 60px;
+    width: auto;
+        
+    }
+    
+    /*Hide the RZ logo when on mobile*/
+    .navbar-brand img {
+        height: 0;
+        width: 0;
+    }
+    
+    #infoCarousel p
+    {
+        margin: 20px 0;
+        text-align: center;
+    }
+
+    #infoCarousel img {
+        float:none;
+        display: block;
+        margin: 0 auto;
+        padding: 10px 0;
+    }
+
+    .google-play {
+        float:none;
+    }
+    
+    h4 {
+        font-size: 1.3em !important;
+        line-height: 2 !important;
+    }
+    
+    .featured-games-header-figure, .timeline-header-figure {
+        padding: 5em !important;
+        padding-bottom: 0 !important;
+    }
+    
+    .main-container img {
+        width: 35%;
+        margin-bottom: 20px;
+    }
+    
+    .slogan {
+        width: 80% !important;
+        margin-bottom: 0;
+    }
+    
+    .intro-text {
+        line-height: 2;
+        font-size: 1em;
+    }
+    
+    .intro-sub-bold-italics-text {
+        font-size: 1em;
+    }
+    
+    #ga-logo {
+    width: 250px;   
+    }
+
+    #ga-logo img {
+        width: 200px;
+        height: auto;
+    }
+    
+    .publishing-requirements-footer p {
+        font-size: 15px;
+        line-height: 1.8;
+    }
+    
+    input[type="checkbox"]
+    {
+        display:none;
+    }
+    
+    label {
+        font-size: 15px !important;
+        margin-top: 20px;
+    }
+    
+    .btn-success, fill-form {
+        margin-top: 20px;
+        visibility: visible !important;
+        width: 200px !important;
+        height: 50px !important;
+        font-size: 20px !important;
+    }
+    
+    #contact img {
+        width: 70%;
+        margin-top: 35px;
+        margin-left: 10px;
+}
+
+    .submit-button {
+        font-size: 15px !important;
+        width: 150px !important;
+    }
+    
+    .publishing-requirements p {
+        font-size: 14px;
+        line-height: 1.5;
+    }
+}
